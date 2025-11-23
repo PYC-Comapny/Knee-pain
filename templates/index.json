@@ -1,0 +1,8 @@
+{
+  "sections": {
+    "home_need_new_knees": { "type": "home-need-new-knees" }
+  },
+  "order": [
+    "home_need_new_knees"
+  ]
+}

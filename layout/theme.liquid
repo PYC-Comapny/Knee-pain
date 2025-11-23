@@ -1,12 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <title>Knee Pain Relief Without Pills or Surgery</title>
+
     {{ content_for_header }}
-    <link rel="stylesheet" href="{{ 'theme.css' | asset_url }}">
-    <title>Shopify Theme</title>
+
+    {%- comment -%} Tailwind via CDN {%- endcomment -%}
+    <script src=" `https://cdn.tailwindcss.com` "></script>
+
+    {%- comment -%} Your theme stylesheet if you have one {%- endcomment -%}
+    {{ 'theme.css' | asset_url | stylesheet_tag }}
   </head>
-  <body>
+  <body class="bg-white text-gray-900 font-sans">
     {{ content_for_layout }}
   </body>
  </html>
