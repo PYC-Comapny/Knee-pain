@@ -1,14 +1,7 @@
 {
   "sections": {
     "header": { "type": "header" },
-    "home_need_new_knees": {
-      "type": "home-need-new-knees-cta",
-      "settings": {
-        "heading": "Need New Knees",
-        "cta_link": "#order",
-        "cta_text": "Get Ultra Knee Massager"
-      }
-    },
+    "home_need_new_knees": { "type": "home-need-new-knees" },
     "footer": { "type": "footer" }
   },
   "order": [
