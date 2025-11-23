@@ -29,7 +29,7 @@
         </div>
         <img src="https://kwnhngnzilsjguiaveil.supabase.co/storage/v1/object/public/Vehicle%20images/Screenshot%202025-11-22%20074935.png" alt="Right section image" class="w-full h-auto object-contain rounded-lg" />
         <div class="flex justify-center">
-          <a href="#order" class="inline-block bg-red-600 text-white px-10 py-5 rounded font-extrabold text-xl md:text-2xl hover:bg-red-700">Get Ultra Knee Massager</a>
+          <a href="{{ section.settings.cta_link | default: '#order' }}" class="inline-block bg-red-600 text-white px-10 py-5 rounded font-extrabold text-xl md:text-2xl hover:bg-red-700">{{ section.settings.cta_text | default: 'Get Ultra Knee Massager' }}</a>
         </div>
       </div>
     </div>
@@ -80,7 +80,7 @@
       <div>
         <img src=" `https://kwnhngnzilsjguiaveil.supabase.co/storage/v1/object/public/Vehicle%20images/Screenshot%202025-11-21%20182802.png` " alt="Feature right image" class="w-full h-auto object-contain rounded-lg" />
         <div class="flex justify-center mt-6">
-          <a href="#order" class="inline-block bg-red-600 text-white px-10 py-5 rounded font-extrabold text-xl md:text-2xl hover:bg-red-700">Get Ultra Knee Massager</a>
+          <a href="{{ section.settings.cta_link | default: '#order' }}" class="inline-block bg-red-600 text-white px-10 py-5 rounded font-extrabold text-xl md:text-2xl hover:bg-red-700">{{ section.settings.cta_text | default: 'Get Ultra Knee Massager' }}</a>
         </div>
       </div>
     </div>
@@ -169,7 +169,7 @@
       </div>
 
       <div class="flex justify-center mt-10">
-        <a href="#order" class="inline-block bg-red-600 text-white px-10 py-5 rounded font-extrabold text-xl md:text-2xl hover:bg-red-700">Get Ultra Knee Massager</a>
+        <a href="{{ section.settings.cta_link | default: '#order' }}" class="inline-block bg-red-600 text-white px-10 py-5 rounded font-extrabold text-xl md:text-2xl hover:bg-red-700">{{ section.settings.cta_text | default: 'Get Ultra Knee Massager' }}</a>
       </div>
     </div>
   </section>
@@ -180,7 +180,9 @@
   "tag": "section",
   "settings": [
     { "type": "text", "id": "heading", "label": "Heading", "default": "Need New Knees" },
-    { "type": "image_picker", "id": "image", "label": "Right image" }
+    { "type": "image_picker", "id": "image", "label": "Right image" },
+    { "type": "url", "id": "cta_link", "label": "CTA link", "default": "#order" },
+    { "type": "text", "id": "cta_text", "label": "CTA text", "default": "Get Ultra Knee Massager" }
   ],
   "blocks": [
     {
