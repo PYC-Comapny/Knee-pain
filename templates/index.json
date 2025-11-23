@@ -1,8 +1,12 @@
 {
   "sections": {
-    "home_need_new_knees": { "type": "home-need-new-knees" }
+    "header": { "type": "header" },
+    "home_need_new_knees": { "type": "home-need-new-knees" },
+    "footer": { "type": "footer" }
   },
   "order": [
-    "home_need_new_knees"
+    "header",
+    "home_need_new_knees",
+    "footer"
   ]
 }

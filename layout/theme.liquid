@@ -7,7 +7,7 @@
     {{ content_for_header }}
 
     {%- comment -%} Tailwind via CDN {%- endcomment -%}
-    <script src=" `https://cdn.tailwindcss.com` "></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
     {%- comment -%} Your theme stylesheet if you have one {%- endcomment -%}
     {{ 'theme.css' | asset_url | stylesheet_tag }}
